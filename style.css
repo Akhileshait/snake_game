@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("forest-3622519_1920.jpg") ;
+    min-height: 100vh;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(199, 255, 199), rgb(255, 239, 239));
+    width: 90vmin;
+    height: 92vmin;
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background-color: brown;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.food{
+    background-color: rgb(255, 69, 69);
+    border-radius: 20px;
+    border: .3vmin solid purple;
+}
+
+.snake{
+    background-color: orangered;
+    border-radius: 8px;
+}
+
+#score{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 34px;
+    font-weight: bold;
+}
